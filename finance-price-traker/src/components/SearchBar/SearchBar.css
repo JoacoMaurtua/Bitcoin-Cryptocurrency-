@@ -2,9 +2,8 @@
   display: block;
   margin: 0 auto;
   margin-top: 15rem;
- /*  justify-content: center;
-  align-items: center; */
   width: 300px;
+  text-align: left;
 }
 
 .coin_input{
@@ -16,5 +15,5 @@
   outline: none;
   height:100%;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
