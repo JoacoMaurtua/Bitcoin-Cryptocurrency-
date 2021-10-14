@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import CoinList from '../../components/CoinList/CoinList';
 import Searchbar from '../../components/SearchBar/SearchBar';
 import getCryptoData from '../../actions/coinsDB';
-import axios from 'axios';
+
 
 
 const Main = () => {
