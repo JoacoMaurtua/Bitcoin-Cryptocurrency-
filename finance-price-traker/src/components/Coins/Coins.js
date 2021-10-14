@@ -6,7 +6,7 @@ const Coins = ({name, price, symbol, marketcap, volume, image, priceChange, id})
     <div className="coin_container">
       <div className="coin_row">
         <div className="coin">
-          <img src={image}  alt="coin_img"/>
+          <img src={image}  className="coin_img" alt="coin_img"/>
           <h1 className="coin_h1">{name}</h1>
           <p className="coin_symbol">{symbol}</p>
         </div>
@@ -24,6 +24,9 @@ const Coins = ({name, price, symbol, marketcap, volume, image, priceChange, id})
               </p>
             )
           }
+          <p className="coin_marketcap">
+            Mkt Cap: ${marketcap.toLocaleString()}
+          </p>
         </div>
       </div>
     </div>
