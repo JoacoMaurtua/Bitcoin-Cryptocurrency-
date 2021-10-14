@@ -1,7 +1,7 @@
 import Coins from '../Coins/Coins';
-import {filteredCoins} from '../../pages/MainPage/Main';
+//import {filteredCoins} from '../../pages/MainPage/Main';
 
-export default function CoinList(){
+export default function CoinList({filteredCoins}){
   return <>
     {
       filteredCoins.map(coin => {
@@ -16,7 +16,7 @@ export default function CoinList(){
           image={coin.image}
           priceChange={coin.price_change_percentage_24h}
         />
-      })
+      }) 
     }
   </>;
 }
