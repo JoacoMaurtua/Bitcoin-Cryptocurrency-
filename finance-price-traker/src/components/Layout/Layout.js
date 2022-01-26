@@ -2,15 +2,16 @@ import {Link} from 'react-router-dom';
 
 
 
-const Layout = ({children,title ="Crypto Tracker"}) =>{
-  return(
-    <div className="layout">
-      <div>
+const Layout = ({ children, title = 'Crypto Tracker' }) => {
+  return (
+    <div className='layout'>
+      <header>
         <title>{title}</title>
-        <link rel='icon' href='/favicon.ico'/>
-      </div>
-      <header className="header">
-        <Link to={`/`}>
+        <link rel='icon' href='/favicon.ico' />
+      </header>
+      <header className='header'>
+        <Link href='/' passHref>
+          <a>
             <svg
               width='675'
               height='375'
@@ -63,10 +64,12 @@ const Layout = ({children,title ="Crypto Tracker"}) =>{
                 </linearGradient>
               </defs>
             </svg>
+          </a>
         </Link>
       </header>
+      <main>{children}</main>
     </div>
-  )
+  );
 };
 
 export default Layout;

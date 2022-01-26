@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Coins.css';
 
 const Coins = ({
-  key,
+  id,
   name,
   price,
   symbol,
@@ -17,7 +17,7 @@ const Coins = ({
 
 
   return (
-    <Link to={`coin/${key}`}>
+    <Link to={`coin/${id}`}>
       <div className="coin_container">
         <div className="coin_row">
           <div className="coin">
