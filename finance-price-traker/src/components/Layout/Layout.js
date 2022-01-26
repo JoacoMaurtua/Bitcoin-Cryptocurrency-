@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 
 
+
 const Layout = ({children,title ="Crypto Tracker"}) =>{
   return(
     <div className="layout">
@@ -66,4 +67,6 @@ const Layout = ({children,title ="Crypto Tracker"}) =>{
       </header>
     </div>
   )
-}
+};
+
+export default Layout;

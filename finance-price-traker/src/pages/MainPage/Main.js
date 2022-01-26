@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import CoinList from '../../components/CoinList/CoinList';
 import Searchbar from '../../components/SearchBar/SearchBar';
 import getCryptoData from '../../actions/coinsDB';
+import logo from '../../images/logo.png';
+
 
 const Main = () => {
   const [cryptoData, setcryptoData] = useState([]);
@@ -22,11 +24,19 @@ const Main = () => {
 
   console.log(cryptoData);
   return (
-    <div>
-      <Searchbar />
-      <CoinList filteredCoins={cryptoData} />
-    </div>
+ 
+      <div className="coin_app">
+        <div className="coin_logo">
+          <img src={logo} alt="logo"/>
+        </div> 
+        <Searchbar />
+        <CoinList filteredCoins={cryptoData} />
+      </div>
+ 
+    
   );
 };
 
 export default Main;
+
+//22 min
